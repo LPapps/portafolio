@@ -1,0 +1,71 @@
+.global{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.global h1{
+  font-size: 70px;
+  text-shadow: -3px 3px var(--w);
+  color: var(--mb);
+  text-align: center;
+}
+.global p{
+  font-size: 23px;
+
+}
+.global h2{
+  font-size: 50px;
+  font-weight: 900;
+}
+.global h1:last-of-type{
+  font-size: 80px;
+}
+.ilustracion{
+  border-left: solid 400px transparent;
+  border-right: solid 400px transparent;
+  border-bottom: solid 500px var(--mw);
+  position: absolute;
+  z-index: 3;
+}
+.ilustracionDos{
+  border-left: solid 400px transparent;
+  border-right: solid 400px transparent;
+  border-bottom: solid 500px var(--mb);
+  position: absolute;
+  z-index: 1;
+  margin-top: 1rem;
+}
+.card{
+  padding-top: 4rem;  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  flex-direction: column;
+}
+.card span{
+  color: var(--w);
+  text-shadow: 5px 5px var(--mb);
+}
+.br{
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.efecto{
+  height: 200%; 
+  width: 100%;
+  background: radial-gradient(
+  orangered 0%, var(--mw) 10%, transparent 50%
+  );
+  opacity: 11%;
+}

@@ -1,0 +1,97 @@
+.global{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    background: var(--b);
+    position: relative;
+    overflow: hidden;
+}
+.card{
+    z-index: 5;
+    background: rgba(255,255,255,0.1);
+    margin-right: 5rem;
+    padding: 3rem;
+    width: 100%;
+    border-top: solid 1px rgba(255,255,255,0.1);
+    border-right: solid 1px rgba(255,255,255,0.2);
+    border-bottom: solid 1px rgba(255,255,255,0.2);
+    box-shadow: 5px 5px 30px 9px rgba(255,255,255,0.1);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    min-height: 60%;
+    max-height: 90%;
+}
+.card>a{
+    padding: 0;
+    margin: .5rem -1.2rem -1.5rem 0;
+    width: 100%;
+    text-align: right;
+    font-size: 23px;
+    color: var(--w);
+    text-decoration: none;
+    text-shadow: 3px 3px var(--b);
+}
+.card span{
+    padding: .1rem 1rem .3rem 1rem;
+    background-color: var(--b);
+    border-radius: 6px;
+}
+.card h1{
+    margin-top: -2rem;
+    margin-bottom: 1rem;
+    margin-right: -1rem;
+    font-size: 50px;
+    color: var(--w);
+    text-shadow: 5px 5px var(--b);
+    width: 100%;
+    text-align: right;
+}
+.card li{
+    padding: .2rem 0 .2rem 0;
+    margin-left: 1rem;
+    width: 100%;
+    text-align: right;
+    list-style: none;
+}
+.card li a{
+    font-size: 21px;
+    color: var(--w);
+    width: 100%;
+}
+.card p{
+    margin: 0 -1rem 0 0;
+    padding: 0;
+    font-size: 20px;
+}
+.card ul{
+    width: 100%;
+}
+
+.ilustracion{
+    z-index: 1;
+    position: absolute;
+    height: 20%;
+    width: 700%;
+    background-color: var(--mw);
+    transform: rotate(45deg);
+}
+.ilustracion::before{
+    position: absolute;
+    content: "";
+    background-color: var(--mb);
+    width: 700%;
+    height: 100%;
+    margin-top: 10rem;
+    margin-left: -6rem;
+}
+@media (max-width: 700px) {
+    .card h1{
+        font-size: 46px;
+        margin: -1.5rem 0 0 0;
+    }
+}
